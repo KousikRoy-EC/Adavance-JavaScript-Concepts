@@ -1,0 +1,32 @@
+CORS (Cross-Origin Resource Sharing) is a mechanism that allows a web page to make requests to a different domain than the one that served the web page. By default, web browsers do not allow a web page to make requests to a different domain for security reasons.
+CORS is a mechanism that allows the server to indicate which origin domains are allowed to make requests to it by returning the appropriate headers in the HTTP response. The browser then checks these headers and allows or denies the request accordingly.
+CORS can be used for example in javascript to get data from an API hosted on a different domain or to connect to a web socket hosted on a different domain.
+
+
+There are several headers that are used in CORS (Cross-Origin Resource Sharing) to indicate which origins are allowed to make requests to a server:
+
+Access-Control-Allow-Origin: This header specifies the origin or origins that are allowed to make requests to the server. The value can be a specific origin (e.g. https://example.com) or "*" to allow any origin.
+
+Access-Control-Allow-Methods: This header specifies the HTTP methods (e.g. GET, POST, PUT) that are allowed for the requests.
+
+Access-Control-Allow-Headers: This header specifies the headers that are allowed in the requests.
+
+Access-Control-Allow-Credentials: This header indicates whether the server allows requests with credentials (e.g. cookies) or not. The value can be "true" or "false".
+
+Access-Control-Request-Method: This header is used in a preflight request, to indicate which method the actual request will use.
+
+Access-Control-Request-Headers: This header is used in a preflight request, to indicate which headers the actual request will use.
+
+These headers are used in both the request and the response message. The headers in the request are sent by the browser, and the headers in the response are sent by the server.
+
+
+
+
+
+
+
+
+
+
+
+
