@@ -1,0 +1,9 @@
+"async" and "defer" are attributes that can be added to script tags in HTML to specify the loading behavior of the script.
+
+"async" tells the browser to download the script in the background and execute it as soon as it finishes downloading. This means that the script will not block the loading of other elements on the page.
+
+"defer" tells the browser to download the script in the background but to execute it only after the page has finished loading. This means that the script will not block the loading of other elements on the page, but it will wait until the page has fully loaded before executing.
+
+"normal" script tags will block the loading of other elements on the page until the script has finished executing.
+
+If both async and defer are present, defer will be used.
